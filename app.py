@@ -5,7 +5,7 @@ import folium
 from streamlit_folium import st_folium
 
 # Load the saved model
-model = joblib.load('/mount/src/proj_rep/ILO_7/project_deployment/model.pkl')
+model = joblib.load('/mount/src/proj_dep/model.pkl')
 
 # Streamlit UI
 st.title('Google Maps Extension Proposal')
