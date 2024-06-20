@@ -130,7 +130,7 @@ if st.button('Predict'):
 if st.session_state.predictions is not None:
     predictions = st.session_state.predictions
     # Folium map setup
-    m = folium.Map(location=[user_latitude, user_longitude], zoom_start=14)
+    m = folium.Map(location=[user_latitude, user_longitude], zoom_start=13)
 
     # Determine color based on prediction
     if int(float(predictions[0])) == 0:
@@ -143,7 +143,7 @@ if st.session_state.predictions is not None:
     # Add circle to the map to highlight the area
     folium.Circle(
         location=[user_latitude, user_longitude],
-        radius=100,  # Adjust radius as needed
+        radius=300,  # Adjust radius as needed
         color=color,
         fill=True,
         fill_color=color
