@@ -130,7 +130,7 @@ if st.button('Predict'):
 if st.session_state.predictions is not None:
     predictions = st.session_state.predictions
     # Folium map setup
-    m = folium.Map(location=[user_latitude, user_longitude], zoom_start=15)
+    m = folium.Map(location=[user_latitude, user_longitude], zoom_start=12)
 
     # Determine color based on prediction
     if int(float(predictions[0])) == 0:
