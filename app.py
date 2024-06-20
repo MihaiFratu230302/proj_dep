@@ -150,4 +150,4 @@ if st.session_state.predictions is not None:
     ).add_to(m)
 
     # Display map
-    st_folium(m, width=400, height=500)
+    st_folium(m, width=100, height=500)
