@@ -143,7 +143,7 @@ if st.session_state.predictions is not None:
     # Add circle to the map to highlight the area
     folium.Circle(
         location=[user_latitude, user_longitude],
-        radius=300,  # Adjust radius as needed
+        radius=100,  # Adjust radius as needed
         color=color,
         fill=True,
         fill_color=color
